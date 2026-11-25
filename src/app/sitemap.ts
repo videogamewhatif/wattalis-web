@@ -16,7 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]);
   const real = professionals.filter((p) => !p.isDemo);
 
-  const staticPaths = ["/", "/especialistas", "/especialidades", "/para-clinicas", "/nosotros", "/contacto"];
+  const staticPaths = ["/", "/especialistas", "/especialidades", "/para-clinicas", "/planes", "/nosotros", "/contacto"];
   if (privacy) staticPaths.push("/privacidad");
   if (terms) staticPaths.push("/terminos");
 

@@ -43,6 +43,9 @@ export function SiteFooter() {
               <li>
                 <Link href="/para-clinicas">Para clínicas</Link>
               </li>
+              <li>
+                <Link href="/planes">Planes y precios</Link>
+              </li>
               {site.appUrl && (
                 <li>
                   <a href={site.appUrl}>Acceso al sistema</a>

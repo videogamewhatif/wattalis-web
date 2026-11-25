@@ -53,6 +53,7 @@ publicados y 1 en borrador).
 | `/especialidades`        | Áreas y especialidades con perfiles publicados            |
 | `/especialidades/[slug]` | Especialidad con acceso a sus resultados                  |
 | `/para-clinicas`         | Página comercial del software de gestión                  |
+| `/planes`                | Planes y precios: selector mensual/anual, comparativa, contratación, gestión de la suscripción, Corporativo y preguntas frecuentes |
 | `/nosotros`              | Presentación de Wattalis                                  |
 | `/contacto`              | Canales institucionales configurados                      |
 | `/privacidad`            | Aviso de privacidad (texto aprobado o «pendiente»)        |
@@ -91,7 +92,7 @@ una variable vuelve a ejecutar `npm run build`.
 | Variable                        | Uso                                                                 |
 | ------------------------------- | ------------------------------------------------------------------- |
 | `NEXT_PUBLIC_SITE_URL`          | URL pública del sitio (canónicas, Open Graph, sitemap). Por defecto `http://localhost:3000` |
-| `NEXT_PUBLIC_WATTALIS_APP_URL`  | URL de la aplicación privada. Sin ella se omite «Acceso al sistema» en el encabezado, el menú móvil, el pie, `/para-clinicas` y `/contacto` |
+| `NEXT_PUBLIC_WATTALIS_APP_URL`  | URL de la aplicación privada. Sin ella se omite «Acceso al sistema» en el encabezado, el menú móvil, el pie, `/para-clinicas` y `/contacto`, y `/planes` muestra los precios iniciales ilustrativos sin contratación en línea. Con ella, `/planes` lee los precios vigentes de `GET <app>/api/billing/catalog` (cada 60 s) y «Elegir plan» abre la contratación en la aplicación |
 | `WATTALIS_ALLOW_INDEXING`       | `true` para permitir indexación. Vacío = `robots.txt` bloquea todo y cada página lleva `noindex` |
 | `WATTALIS_DATA_SOURCE`          | Fuente del directorio. Hoy solo `demo`                              |
 | `WATTALIS_SALES_EMAIL` / `_PHONE` | Canal comercial. El botón «Contactar a Wattalis» abre el correo; sin correo lleva a `/contacto` |

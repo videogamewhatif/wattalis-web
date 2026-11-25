@@ -1,0 +1,30 @@
+/* Encabezado separado por público (pacientes | clínicas). Usa las variables de :root. */
+
+@media (min-width: 960px) {
+  .site-nav.site-nav--split {
+    flex: 1;
+    margin-left: 24px;
+  }
+
+  .site-nav-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* Lado de clínicas: a la derecha, separado por una línea vertical. */
+  .site-nav-group--clinics {
+    margin-left: auto;
+    padding-left: 16px;
+    border-left: 1px solid var(--line-strong);
+  }
+}
+
+.mobile-menu-title {
+  padding: 8px 14px 4px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
